@@ -22,8 +22,8 @@ const Projects = () => {
       });
       const { text } = useStyles()
       return (
-            <Container style={{ marginTop: '100px' }}>
-                  <Typography className={text} style={{ color: 'navy' }} variant='h3'>Projects</Typography>
+            <Container id='project' style={{ marginTop: '100px', marginBottom: "25px" }}>
+                  <Typography className={text} style={{ color: 'navy', fontWeight: 'bolder' }} variant='h3'>Projects</Typography>
                   <Grid container spacing={2}>
                         <Grid style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} item xs={12} sm={12} md={6} lg={4}>
 

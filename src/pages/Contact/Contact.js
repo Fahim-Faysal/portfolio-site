@@ -41,8 +41,8 @@ const Contact = () => {
 
 
       return (
-            <Container>
-                  <Typography className={text} sx={{ marginTop: '100px' }} variant='h3'>Contact</Typography>
+            <Container id='contact'>
+                  <Typography className={text} sx={{ marginTop: '100px', marginBottom: '25px', fontWeight: 'bolder', color: 'navy' }} variant='h3'>Contact</Typography>
                   <form action="https://formsubmit.co/faysalsiyam@gmail.com" method="POST">
                         <Grid>
                               <Grid xs={12} sm={12} lg={12}>
