@@ -7,7 +7,6 @@ import { makeStyles } from '@mui/styles';
 
 
 const Contact = () => {
-      // const [values, setValues] = useState({})
       const theme = useTheme()
       const useStyles = makeStyles({
             contact: {

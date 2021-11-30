@@ -55,7 +55,7 @@ const Navigation = () => {
                   role="presentation"
             >
                   <List>
-                        <ListItem button>
+                        <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
                                     <Home />
                               </ListItemIcon>
@@ -65,7 +65,7 @@ const Navigation = () => {
                               <ListItemIcon>
                                     <Info />
                               </ListItemIcon>
-                              <Button color="inherit">About</Button>
+                              <Button style={{ color: 'black' }}><a href='#about' style={{ textDecoration: 'none', color: 'black' }}>About</a></Button>
 
                         </ListItem>
                         <ListItem button>
@@ -120,7 +120,7 @@ const Navigation = () => {
                                           </Grid>
                                           <Grid className={navItem} xs={12} sm={12} md={6} lg={6} style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
                                                 <Button style={{ color: 'black' }}><a href='#home' style={{ textDecoration: 'none', color: 'black' }}>Home</a></Button>
-                                                <Button color="inherit">About</Button>
+                                                <Button style={{ color: 'black' }}><a href='#about' style={{ textDecoration: 'none', color: 'black' }}>About</a></Button>
                                                 <Button color="inherit"><a style={{ textDecoration: 'none', color: 'black' }} href="https://drive.google.com/uc?id=1bjRV9K5l5LCzCESKXg0JRqAUL3xCf2oA&export=download" download="Fahim Faysal Siyam">Resume</a></Button>
                                                 <Button color="inherit">Skill</Button>
                                                 <Button color="inherit"><a href="#project" style={{ textDecoration: 'none', color: 'black' }}>Projects</a></Button>
