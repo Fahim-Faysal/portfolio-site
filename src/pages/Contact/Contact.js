@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Mail, Edit, AccountCircle, Subject } from '@mui/icons-material';
 import { Button, Container, Grid, Typography, useTheme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+
+
 
 
 const Contact = () => {
@@ -41,6 +43,7 @@ const Contact = () => {
 
       return (
             <Container id='contact'>
+
                   <Typography className={text} sx={{ marginTop: '100px', marginBottom: '25px', fontWeight: 'bolder', color: 'navy' }} variant='h3'>Contact</Typography>
                   <form action="https://formsubmit.co/faysalsiyam@gmail.com" method="POST">
                         <Grid>
@@ -83,6 +86,7 @@ const Contact = () => {
                               <Button type='submit' style={{ marginLeft: '28px' }} className={`${contactBig} ${contact} ${buttonStyle}`} variant="contained">Send</Button>
                         </Grid>
                   </form>
+
             </Container>
       );
 };

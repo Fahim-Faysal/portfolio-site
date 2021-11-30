@@ -61,33 +61,33 @@ const Navigation = () => {
                               </ListItemIcon>
                               <Button style={{ color: 'black' }}><a href='#home' style={{ textDecoration: 'none', color: 'black' }}>Home</a></Button>
                         </ListItem>
-                        <ListItem button>
+                        <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
                                     <Info />
                               </ListItemIcon>
                               <Button style={{ color: 'black' }}><a href='#about' style={{ textDecoration: 'none', color: 'black' }}>About</a></Button>
 
                         </ListItem>
-                        <ListItem button>
+                        <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
                                     <PostAdd />
                               </ListItemIcon>
                               <Button color="inherit"><a style={{ textDecoration: 'none', color: 'black' }} href="https://drive.google.com/uc?id=1bjRV9K5l5LCzCESKXg0JRqAUL3xCf2oA&export=download" download="Fahim Faysal Siyam">Resume</a></Button>
                         </ListItem>
-                        <ListItem button>
+                        <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
                                     <Psychology />
                               </ListItemIcon>
                               <Button color="inherit">Skill</Button>
                         </ListItem>
-                        <ListItem button>
+                        <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
                                     <Assignment />
                               </ListItemIcon>
                               <Button color="inherit"><a href="#project" style={{ textDecoration: 'none', color: 'black' }}>Projects</a></Button>
 
                         </ListItem>
-                        <ListItem button>
+                        <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
                                     <ContactMail />
                               </ListItemIcon>

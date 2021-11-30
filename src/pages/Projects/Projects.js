@@ -11,6 +11,8 @@ import bikeshop from '../../image/bikeshop.png'
 import tour1 from '../../image/tour1.png'
 import diagnostic from '../../image/disgnostic.png'
 
+
+
 const Projects = () => {
       const theme = useTheme()
       const useStyles = makeStyles({
@@ -23,6 +25,7 @@ const Projects = () => {
       const { text } = useStyles()
       return (
             <Container id='project' style={{ marginTop: '100px', marginBottom: "25px" }}>
+
                   <Typography className={text} style={{ color: 'navy', fontWeight: 'bolder' }} variant='h3'>Projects</Typography>
                   <Grid container spacing={2}>
                         <Grid style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} item xs={12} sm={12} md={6} lg={4}>
@@ -122,43 +125,6 @@ const Projects = () => {
                         </Grid>
 
                   </Grid>
-
-                  {/* <Grid spacing={2} style={{ border: '1px solid green', display: 'flex', justifyContent: 'center' }}>
-                        
-                        <br /> */}
-
-                  {/* <Grid xs={12} sm={12} md={4} lg={4} >
-                              <Card sx={{ maxWidth: 345, marginTop: '25px' }}>
-                                    <CardMedia
-                                          component="img"
-                                          height="140"
-                                          image={bikeshop}
-                                          alt="green iguana"
-                                    />
-                                    <CardContent>
-                                          <Typography gutterBottom variant="h5" component="div">
-                                                Bike's Mart
-                                          </Typography>
-                                          <Typography variant="body2" color="text.secondary">
-                                                •	User can choose variety of bikes and explore more new bikes
-                                                •	Get to know about the specification of every bike and make an order after login into the system and manage their order
-                                                •	Dashboard available for both user and admin, admin can add product and manage all orders also remove products.
-
-                                          </Typography>
-                                    </CardContent>
-                                    <CardActions style={{ display: 'flex', justifyContent: 'space-between' }}>
-                                          <Button style={{ fontSize: '15px' }} size="small" variant="outlined"><a style={{ textDecoration: 'none' }} href="https://bike-shop-342a4.web.app/" target='_blank' rel="noopener noreferrer" >Live Site</a>
-                                          </Button>
-                                          <Button style={{ fontSize: '15px' }} size="small" variant="contained"><a style={{ textDecoration: 'none', color: 'white' }} href="https://bike-shop-342a4.web.app/" target='_blank' rel="noopener noreferrer" >ClientSide</a>
-                                          </Button>
-                                          <Button style={{ fontSize: '15px', backgroundColor: '#FF7F7F' }} size="small"><a style={{ textDecoration: 'none', color: 'white' }} href="https://bike-shop-342a4.web.app/" target='_blank' rel="noopener noreferrer" >ServerSide</a>
-                                          </Button>
-
-                                    </CardActions>
-                              </Card>
-
-                        </Grid> */}
-                  {/* </Grid> */}
 
 
             </Container >
