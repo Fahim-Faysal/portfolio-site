@@ -72,7 +72,7 @@ const Navigation = () => {
                               <ListItemIcon>
                                     <PostAdd />
                               </ListItemIcon>
-                              <Button color="inherit"><a style={{ textDecoration: 'none', color: 'black' }} href="https://drive.google.com/uc?id=1bjRV9K5l5LCzCESKXg0JRqAUL3xCf2oA&export=download" download="Fahim Faysal Siyam">Resume</a></Button>
+                              <Button color="inherit"><a style={{ textDecoration: 'none', color: 'black' }} href="https://drive.google.com/file/d/165Y2-RICbCh7h1S01e5_HY9epyJD8ntn/view?usp=sharing" download="Fahim Faysal Siyam">Resume</a></Button>
                         </ListItem>
                         <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
@@ -121,7 +121,7 @@ const Navigation = () => {
                                           <Grid className={navItem} xs={12} sm={12} md={6} lg={6} style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
                                                 <Button style={{ color: 'black' }}><a href='#home' style={{ textDecoration: 'none', color: 'black' }}>Home</a></Button>
                                                 <Button style={{ color: 'black' }}><a href='#about' style={{ textDecoration: 'none', color: 'black' }}>About</a></Button>
-                                                <Button color="inherit"><a style={{ textDecoration: 'none', color: 'black' }} href="https://drive.google.com/uc?id=1bjRV9K5l5LCzCESKXg0JRqAUL3xCf2oA&export=download" download="Fahim Faysal Siyam">Resume</a></Button>
+                                                <Button color="inherit"><a style={{ textDecoration: 'none', color: 'black' }} href="https://drive.google.com/file/d/165Y2-RICbCh7h1S01e5_HY9epyJD8ntn/view?usp=sharing" download="Fahim Faysal Siyam">Resume</a></Button>
                                                 <Button color="inherit">Skill</Button>
                                                 <Button color="inherit"><a href="#project" style={{ textDecoration: 'none', color: 'black' }}>Projects</a></Button>
                                                 <Button color="inherit"><a href="#contact" style={{ textDecoration: 'none', color: 'black' }}>Contact</a></Button>
