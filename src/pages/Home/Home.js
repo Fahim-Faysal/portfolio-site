@@ -13,9 +13,7 @@ import Skills from '../Slills/Skills'
 const Home = () => {
       return (
             <div>
-
                   <Navigation />
-
                   <About />
                   <AboutMe />
                   <Projects />

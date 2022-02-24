@@ -9,6 +9,7 @@ import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import { Assignment, ContactMail, Home, Info, PostAdd, Psychology } from '@mui/icons-material';
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 
 
@@ -59,7 +60,9 @@ const Navigation = () => {
                               <ListItemIcon>
                                     <Home />
                               </ListItemIcon>
-                              <Button style={{ color: 'black' }}><a href='#home' style={{ textDecoration: 'none', color: 'black' }}>Home</a></Button>
+                              <Button
+
+                                    style={{ color: 'black' }}><a href='#home' style={{ textDecoration: 'none', color: 'black' }}>Home</a></Button>
                         </ListItem>
                         <ListItem onClick={() => setState(false)} button>
                               <ListItemIcon>
@@ -119,7 +122,8 @@ const Navigation = () => {
                                                 <Typography sx={{ flexGrow: 1, fontWeight: '800', color: 'navy' }} className={name} variant="h5" >Fahim Faysal Siyam</Typography>
                                           </Grid>
                                           <Grid className={navItem} xs={12} sm={12} md={6} lg={6} style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center' }}>
-                                                <Button style={{ color: 'black' }}><a href='#home' style={{ textDecoration: 'none', color: 'black' }}>Home</a></Button>
+                                                <Button
+                                                      style={{ color: 'black' }}><a href='#home' style={{ textDecoration: 'none', color: 'black' }}>Home</a></Button>
                                                 <Button style={{ color: 'black' }}><a href='#about' style={{ textDecoration: 'none', color: 'black' }}>About</a></Button>
                                                 <Button color="inherit"><a style={{ textDecoration: 'none', color: 'black' }} href="https://drive.google.com/file/d/165Y2-RICbCh7h1S01e5_HY9epyJD8ntn/view?usp=sharing" download="Fahim Faysal Siyam">Resume</a></Button>
                                                 <Button color="inherit">Skill</Button>

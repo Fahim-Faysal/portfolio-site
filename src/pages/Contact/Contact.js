@@ -4,7 +4,7 @@ import TextField from '@mui/material/TextField';
 import { Mail, Edit, AccountCircle, Subject } from '@mui/icons-material';
 import { Button, Container, Grid, Typography, useTheme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 
 
@@ -48,26 +48,43 @@ const Contact = () => {
                   <form action="https://formsubmit.co/faysalsiyam@gmail.com" method="POST">
                         <Grid>
                               <Grid xs={12} sm={12} lg={12}>
-                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                                    <motion.div
+                                          initial={{ y: "-10vh" }}
+                                          animate={{ y: 0 }}
+                                          transition={{ duration: 4 }}
+                                          sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
                                           <AccountCircle sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
                                           <TextField className={`${contactBig} ${contact}`} type='text' name='name'
                                                 label="Name" variant="standard" required />
-                                    </Box>
+                                    </motion.div>
                                     <br />
-                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                                    <motion.div
+                                          initial={{ y: "-10vh" }}
+                                          animate={{ y: 0 }}
+                                          transition={{ duration: 3 }}
+                                          sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
                                           <Mail sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
-                                          <TextField className={`${contactBig} ${contact}`} type='email' name='email'
+                                          <TextField
+                                                className={`${contactBig} ${contact}`} type='email' name='email'
                                                 label="Email" variant="standard" required />
-                                    </Box>
+                                    </motion.div>
                                     <br />
-                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                                    <motion.div
+                                          initial={{ y: "-10vh" }}
+                                          animate={{ y: 0 }}
+                                          transition={{ duration: 2 }}
+                                          sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
                                           <Subject sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
                                           <TextField className={`${contactBig} ${contact}`} type='text' name='subject'
                                                 label="Subject" variant="standard" required />
-                                    </Box>
+                                    </motion.div>
                               </Grid>
                               <br />
-                              <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+                              <motion.div
+                                    initial={{ y: "-10vh" }}
+                                    animate={{ y: 0 }}
+                                    transition={{ duration: 1 }}
+                                    sx={{ display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
                                     <Edit sx={{ color: 'action.active', mr: 1, my: 0.5 }} />
                                     <TextField
                                           type='text'
@@ -81,7 +98,7 @@ const Contact = () => {
                                           variant="standard"
                                           required
                                     />
-                              </Box>
+                              </motion.div>
                               <br />
                               <Button type='submit' style={{ marginLeft: '28px' }} className={`${contactBig} ${contact} ${buttonStyle}`} variant="contained">Send</Button>
                         </Grid>

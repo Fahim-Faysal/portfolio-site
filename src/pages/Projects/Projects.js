@@ -10,7 +10,7 @@ import { makeStyles } from '@mui/styles';
 import bikeshop from '../../image/bikeshop.png'
 import tour1 from '../../image/tour1.png'
 import diagnostic from '../../image/disgnostic.png'
-
+import { AnimatePresence, motion } from 'framer-motion/dist/framer-motion'
 
 
 const Projects = () => {
@@ -28,7 +28,8 @@ const Projects = () => {
 
                   <Typography className={text} style={{ color: 'navy', fontWeight: 'bolder' }} variant='h3'>Projects</Typography>
                   <Grid container spacing={2}>
-                        <Grid style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} item xs={12} sm={12} md={6} lg={4}>
+                        <Grid
+                              style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }} item xs={12} sm={12} md={6} lg={4}>
 
                               <Card sx={{ maxWidth: 345, marginTop: '25px' }}>
                                     <CardMedia
